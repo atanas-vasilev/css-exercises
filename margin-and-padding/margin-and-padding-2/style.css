@@ -10,25 +10,14 @@ body {
   padding: 10px;
 }
 
-
-.title {
-  background: #e3f4ff;
-  padding: 10px;
+.card > * {
   margin: 10px auto;
-}
-
-.content {
-  background: #e3f4ff;
   padding: 10px;
+  background: #e3f4ff;
 
 }
 
 .button-container {
-  background: #e3f4ff;
-  margin: 10px auto;
-
-
-  padding: 10px;
   text-align: center;
 }
 
