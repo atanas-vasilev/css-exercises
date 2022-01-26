@@ -37,6 +37,7 @@ body{
 
 .content{
   display:flex;
+  flex-direction: column;
   flex-basis:100%;
   justify-content: center;
   align-items: center;
@@ -72,11 +73,12 @@ li{
 }
 
 button{
-  display: block;
   padding:8px 16px;
 }
+
 .buttons{
-  display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* gap: 4px; */
+  /* flex-wrap: wrap; */
+  text-align: center;
 }
