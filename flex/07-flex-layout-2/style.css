@@ -1,7 +1,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .header {
@@ -26,3 +26,77 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* SOLUTIONS BELOW */
+
+.container{
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+.header{
+  display: flex;
+}
+
+.footer{
+  display: flex;
+  /* The footer text is centered horizontally and vertically. */
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  
+  /* The footer is pushed to the bottom of the screen (the footer may go below the bottom of the screen if the content of the 'cards' section overflows and/or if your screen is shorter). */
+  /* The sidebar and cards take up all available space above the footer. */
+  flex:1;
+
+}
+.header-text{
+  /* The header text is size 32px and weight 900. */
+  font-size: 32px;
+  font-weight: 900;
+  /* The header text is vertically centered and 16px from the edge of the screen. */
+  align-self: center;
+  padding-left: 16px;
+}
+
+.sidebar{
+  display: flex;
+  /* The sidebar is 300px wide (and it doesn't shrink). */
+  flex: 1 0 300px;
+  /* The sidebar has 16px padding. */
+  padding:16px;
+}
+
+.sidebar ul{
+  padding:0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.sidebar a{
+  /* The sidebar links are size 24px, are white, and do not have the underline text decoration. */
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.cards{
+  /* The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page. */
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 32px; */
+  /* There is 32px padding around the 'cards' section. */
+  padding: 32px;
+}
+
+.card{
+  padding:16px;
+  margin: 16px;
+  flex: 0 0 300px;
+}
+
